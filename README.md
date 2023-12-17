@@ -1,8 +1,11 @@
 (work in progress)
 
 C++ version of 2048 run through terminal that can also:
+
 -rotate the board
+
 -flip the board
+
 -scale dimensions of board
 
 To run:

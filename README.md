@@ -11,10 +11,11 @@ g++ -o 2048 play.cc game.cc
 ```
 
 Commands:
+```
 "w" or "up"
 "a" or "down"
 "s" or "left"
 "d" or "right"
 "p" or "print"
-"q" or "quit
-"
+"q" or "quit"
+``

@@ -74,17 +74,16 @@ bool game::game_over() {
     for (int i = 0; i < dimensions; ++i) {
         for (int j = 0; j < dimensions; ++j) {
             if (gameBoard[i][j] == 0) return false;
-            
             if (i-1 >= 0 && i-1 < dimensions) {
                 if (gameBoard[i][j] == gameBoard[i-1][j]) return false;
             }
-            else if (i+1 >= 0 && i+1 < dimensions) {
+            if (i+1 >= 0 && i+1 < dimensions) {
                 if (gameBoard[i][j] == gameBoard[i+1][j]) return false;
             }
-            else if (j-1 >= 0 && j-1 < dimensions) {
+            if (j-1 >= 0 && j-1 < dimensions) {
                 if (gameBoard[i][j] == gameBoard[i][j-1]) return false;
             }
-            else if (j+1 >= 0 && j+1 < dimensions) {
+            if (j+1 >= 0 && j+1 < dimensions) {
                 if (gameBoard[i][j] == gameBoard[i][j+1]) return false;
             }
         }

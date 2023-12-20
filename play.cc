@@ -4,7 +4,7 @@
 int main(int argc, char *argv[]) {
     // testing values 
     std::string command;
-    game currentGame = game(4);
+    game currentGame = game(2);
     bool boardChanged = true;
 
     while (true) {

@@ -184,18 +184,18 @@ void game::flipy() {
 }
 
 void game::rotateclockwise() {
-
-}
+    std::vector<std::vector<int>> ogBoard = gameBoard;
+    for (int i = 0; i < dimensions; ++i) {
+        for (int j = 0; j < dimensions; ++j) {
+            gameBoard[i][j] = ogBoard[dimensions-j-1][i];
+        }
+    }}
 
 void game::rotatecounter() {
-    for (int i = 0; i < dimensions/2; ++i) {
-        for (int j = 0; j < dimensions-i-1; ++j) {
-            int tempval = 0;
-            tempval = gameBoard[i][j];
-            gameBoard[i][j] = gameBoard[i][dimensions-j-1];
-            gameBoard[i][dimensions-j-1] = gameBoard[dimensions-i-1][dimensions-j-1];
-            gameBoard[dimensions-i-1][dimensions-j-1] = gameBoard[dimensions-i-1][j];
-            gameBoard[dimensions-i-1][j] = tempval;
+    std::vector<std::vector<int>> ogBoard = gameBoard;
+    for (int i = 0; i < dimensions; ++i) {
+        for (int j = 0; j < dimensions; ++j) {
+            gameBoard[i][j] = ogBoard[j][dimensions-i-1];
         }
     }
 }

@@ -28,6 +28,11 @@ class game {
         bool down();
         bool left();
         bool right();
+
+        void flipx();
+        void flipy();
+        void rotateclockwise();
+        void rotatecounter();
 };
 
 std::ostream & operator<<(std::ostream & out, const game & game);

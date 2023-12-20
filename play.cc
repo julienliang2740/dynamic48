@@ -1,7 +1,7 @@
 #include <iostream>
 #include "game.h"
 
-int main() {
+int main(int argc, char *argv[]) {
     // testing values 
     std::string command;
     game currentGame = game(4);
@@ -39,7 +39,22 @@ int main() {
             else boardChanged = false;
         }
         else if (command == "p" || command == "print") {
-            std::cout << currentGame;
+            boardChanged = false;
+        }
+        else if (command == "flipx") {
+            currentGame.flipx();
+            boardChanged = false;
+        }
+        else if (command == "flipy") {
+            currentGame.flipy();
+            boardChanged = false;
+        }
+        else if (command == "rotateleft") {
+            currentGame.rotatecounter();
+            boardChanged = false;
+        }
+        else if (command == "rotateright") {
+            currentGame.rotateclockwise();
             boardChanged = false;
         }
         else {

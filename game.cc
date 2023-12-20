@@ -161,6 +161,45 @@ bool game::right() {
     return !compare_board(prevBoard, gameBoard);
 }
 
+void game::flipx() {
+    for (int i = 0; i < dimensions; ++i) {
+        int tempval = -1;
+        for (int j = 0; j < dimensions/2; ++j) {
+            tempval = gameBoard[i][j];
+            gameBoard[i][j] = gameBoard[i][dimensions-j-1];
+            gameBoard[i][dimensions-j-1] = tempval;
+        }
+    }
+}
+
+void game::flipy() {
+    for (int i = 0; i < dimensions; ++i) {
+        int tempval = -1;
+        for (int j = 0; j < dimensions/2; ++j) {
+            tempval = gameBoard[j][i];
+            gameBoard[j][i] = gameBoard[dimensions-j-1][i];
+            gameBoard[dimensions-j-1][i] = tempval;
+        }
+    }
+}
+
+void game::rotateclockwise() {
+
+}
+
+void game::rotatecounter() {
+    for (int i = 0; i < dimensions/2; ++i) {
+        for (int j = 0; j < dimensions-i-1; ++j) {
+            int tempval = 0;
+            tempval = gameBoard[i][j];
+            gameBoard[i][j] = gameBoard[i][dimensions-j-1];
+            gameBoard[i][dimensions-j-1] = gameBoard[dimensions-i-1][dimensions-j-1];
+            gameBoard[dimensions-i-1][dimensions-j-1] = gameBoard[dimensions-i-1][j];
+            gameBoard[dimensions-i-1][j] = tempval;
+        }
+    }
+}
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////

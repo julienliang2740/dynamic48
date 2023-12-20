@@ -1,10 +1,17 @@
 #include <iostream>
+#include <cstdlib>
 #include "game.h"
 
 int main(int argc, char *argv[]) {
-    // testing values 
     std::string command;
-    game currentGame = game(2);
+    int dimensions = 4;
+
+    if (argc > 1) {
+        int customDimensions = std::atoi(argv[1]);
+        if (customDimensions) dimensions = customDimensions;
+    }
+
+    game currentGame = game(dimensions);
     bool boardChanged = true;
 
     while (true) {

@@ -1,5 +1,3 @@
-(work in progress)
-
 C++ version of 2048 run through terminal that can also:
 
 -rotate the board
@@ -8,10 +6,10 @@ C++ version of 2048 run through terminal that can also:
 
 -scale dimensions of board
 
-To run:
+To run (number for dimensions parameter is optional, defaults to 4):
 ```
 g++ -o 2048 play.cc game.cc
-./2048
+./2048 <dimensions>
 ```
 
 Commands:
@@ -22,4 +20,8 @@ Commands:
 "d" or "right"
 "p" or "print"
 "q" or "quit"
+"flipx"
+"flipy"
+"rotateleft"
+"rotateright"
 ```

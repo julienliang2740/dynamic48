@@ -1,13 +1,11 @@
 ## Dynamic48
-Original: https://play2048.co/
 
-C++ version of 2048 run through terminal that can also:
+This is an augmented version the game 2048 built with C++. On top of the original game play, this implementation can:
+-**rotate** the board
 
--rotate the board
+-**flip** the board
 
--flip the board
-
--scale dimensions of board
+-**scale dimensions** of board
 
 To run (number for dimensions parameter is optional, defaults to 4):
 ```
@@ -28,3 +26,14 @@ g++ -o 2048 play.cc game.cc
 "rotateleft"
 "rotateright"
 ```
+
+## Demo:
+**Original Board**
+
+**Rotate Clockwise**
+
+**Flip Up**
+
+**Flip Sideways**
+
+(original: https://play2048.co/)

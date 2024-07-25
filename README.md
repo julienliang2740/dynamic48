@@ -1,5 +1,5 @@
-## Original:
-https://play2048.co/
+## Dynamic48
+Original: https://play2048.co/
 
 C++ version of 2048 run through terminal that can also:
 

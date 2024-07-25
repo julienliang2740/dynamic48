@@ -1,4 +1,4 @@
-Original:
+## Original:
 https://play2048.co/
 
 C++ version of 2048 run through terminal that can also:
@@ -15,7 +15,7 @@ g++ -o 2048 play.cc game.cc
 ./2048 <dimensions>
 ```
 
-Commands:
+## Commands:
 ```
 "w" or "up"
 "a" or "down"

@@ -1,6 +1,7 @@
 ## Dynamic48
 
 This is an augmented version the game 2048 built with C++. On top of the original game play, this implementation can:
+
 -**rotate** the board
 
 -**flip** the board

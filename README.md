@@ -2,11 +2,11 @@
 
 This is an augmented version the game 2048 built with C++. On top of the original game play, this implementation can:
 
--**rotate** the board
+- **Rotate** the board
 
--**flip** the board
+- **Flip** the board
 
--**scale dimensions** of board
+- **Scale dimensions** of board
 
 To run (number for dimensions parameter is optional, defaults to 4):
 ```
